@@ -3,14 +3,15 @@ package org.fjeanne.jmh.benchmarks.defaultmethods;
 public class Children {
 
 	public static class Child1 implements Interface {
-		@Override
-		public void doNothingAbstract() {
-			// do nothing
-		}
 
 		@Override
 		public void doNothingOverridden() {
 			// do nothing
+		}
+
+		@Override
+		public double doAddOverridden(double a, double b) {
+			return a + b;
 		}
 	}
 
@@ -39,14 +40,15 @@ public class Children {
 	}
 
 	public static class Child10 extends Child9 {
-		@Override
-		public void doNothingAbstract() {
-			// do nothing
-		}
 
 		@Override
 		public void doNothingOverridden() {
 			// do nothing
+		}
+
+		@Override
+		public double doAddOverridden(double a, double b) {
+			return a + b;
 		}
 	}
 }
