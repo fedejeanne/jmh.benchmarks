@@ -26,7 +26,7 @@ BenchmarkDoNothingMethods.benchmarkDepth1Default      avgt       0,597          
 BenchmarkDoNothingMethods.benchmarkDepth1Overridden   avgt       0,602          ns/op
 ```
 
-###Analysis
+### Analysis
 Invoking the `Default` methods (the ones in the *interface*) vs invoking the `Overriden` methods (the ones in the *implementing classes*) has a maximum difference of **80 Nanoseconds per operation** which means the `default` methods are around 13% slower when doing nothing (the body of the method is empty):
 
 ```bash
